@@ -13,7 +13,8 @@
 
   --fw-normal: 400;
   --fw-medium: 500;
-  --fw-bold: 700;
+  --fw-semi-bold: 700;
+  --fw-bold: 900;
 
   --max: 1100px;
   --pad: 24px;
