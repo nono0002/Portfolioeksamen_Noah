@@ -1,0 +1,73 @@
+:root {
+  --blaa: #0f52ba;
+  --bg: #ffffff;
+  --tekst: #0b0b0b;
+
+  --font-overskrift: "Google Sans", system-ui, sans-serif;
+  --font-tekst: "Work Sans", system-ui, sans-serif;
+
+  --fs-lille: 0.9rem;
+  --fs-normal: 1rem;
+  --fs-stor: 1.25rem;
+  --fs-xstor: 2rem;
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --max: 1100px;
+  --pad: 24px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--tekst);
+  font-family: var(--font-tekst);
+  font-size: var(--fs-normal);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-overskrift);
+  font-weight: var(--fw-medium);
+}
+
+h1 {
+  font-size: var(--fs-xstor);
+}
+
+h2 {
+  font-size: var(--fs-stor);
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: var(--blaa);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+a:hover {
+  text-decoration-thickness: 3px;
+}
+
+.knap,
+button {
+  border: 2px solid var(--blaa);
+  background: transparent;
+  color: var(--blaa);
+  padding: 10px 18px;
+  font-family: var(--font-overskrift);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+}
+
+.knap:hover,
+button:hover {
+  background: var(--blaa);
+  color: #fff;
+}
