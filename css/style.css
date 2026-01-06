@@ -20,6 +20,12 @@
   --pad: 24px;
 }
 
+.indhold {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
 body {
   background: var(--bg);
   color: var(--tekst);
@@ -32,6 +38,7 @@ h2,
 h3 {
   font-family: var(--font-overskrift);
   font-weight: var(--fw-medium);
+  line-height: 1.15;
 }
 
 h1 {
@@ -56,8 +63,13 @@ a:hover {
   text-decoration-thickness: 3px;
 }
 
+a:visited {
+  color: var(--blaa);
+}
+
 .knap,
 button {
+  display: inline-block;
   border: 2px solid var(--blaa);
   background: transparent;
   color: var(--blaa);
@@ -65,10 +77,19 @@ button {
   font-family: var(--font-overskrift);
   font-weight: var(--fw-medium);
   cursor: pointer;
+  width: auto;
 }
 
 .knap:hover,
 button:hover {
   background: var(--blaa);
+  color: #fff;
+}
+
+.knap:visited {
+  color: var(--blaa);
+}
+
+.knap:hover:visited {
   color: #fff;
 }
