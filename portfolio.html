@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio – Noah</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/header_footer.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
   </head>
 
   <body>
@@ -30,109 +32,46 @@
         </nav>
       </div>
     </header>
+
     <main>
       <section class="sektion portfolio_intro">
         <div class="indhold">
-          <h1 class="overskrift">Portfolio</h1>
-          <p>Klik på et tema for at se løsning, proces og læring.</p>
-        </div>
-      </section>
+          <h1>Portfolio</h1>
 
-      <section class="sektion portfolio_menu">
-        <div class="indhold">
-          <div class="tema_menu">
-            <button class="tema_knap er_aktiv" type="button" data_tema="tema_1">
-              Tema 1
-            </button>
-            <button class="tema_knap" type="button" data_tema="tema_2">
-              Tema 2
-            </button>
-            <button class="tema_knap" type="button" data_tema="tema_3">
-              Tema 3
-            </button>
-            <button class="tema_knap" type="button" data_tema="tema_4">
-              Tema 4
-            </button>
-            <button class="tema_knap" type="button" data_tema="tema_5">
-              Tema 5
-            </button>
+          <div class="tema_liste">
+            <a class="knap" href="#tema2">Tema 2</a>
+            <a class="knap" href="#tema3">Tema 3</a>
+            <a class="knap" href="#tema4">Tema 4</a>
+            <a class="knap" href="#tema5">Tema 5</a>
           </div>
         </div>
       </section>
 
-      <section class="sektion portfolio_indhold">
+      <section id="tema2" class="sektion tema_sektion">
         <div class="indhold">
-          <section class="tema_indhold er_aktiv" id="tema_1">
-            <h2 class="tema_titel">Tema 1</h2>
+          <h2>Tema 2 – Grundlæggende web</h2>
+          <p>Indhold kommer her.</p>
+        </div>
+      </section>
 
-            <section class="tema_intro">
-              <p></p>
-            </section>
+      <section id="tema3" class="sektion tema_sektion">
+        <div class="indhold">
+          <h2>Tema 3 – UX</h2>
+          <p>Indhold kommer her.</p>
+        </div>
+      </section>
 
-            <section class="tema_losning">
-              <h3>Løsning</h3>
+      <section id="tema4" class="sektion tema_sektion">
+        <div class="indhold">
+          <h2>Tema 4 – Animation</h2>
+          <p>Indhold kommer her.</p>
+        </div>
+      </section>
 
-              <div class="losning_grid">
-                <div class="losning_tekst">
-                  <p></p>
-                </div>
-
-                <div class="losning_visuelt">
-                  <img src="img/placeholder.jpg" alt="" />
-                  <ul class="losning_fakta">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            <section class="tema_proces">
-              <h3>Proces</h3>
-
-              <details class="accordion">
-                <summary>Metoder</summary>
-                <p></p>
-              </details>
-
-              <details class="accordion">
-                <summary>Test og iteration</summary>
-                <p></p>
-              </details>
-            </section>
-
-            <section class="tema_laering">
-              <h3>Læring</h3>
-              <p></p>
-            </section>
-
-            <section class="tema_links">
-              <h3>Links</h3>
-              <a class="link" href="#" target="_blank" rel="noopener"
-                >Se live site</a
-              >
-              <a class="link" href="#" target="_blank" rel="noopener"
-                >Se GitHub</a
-              >
-            </section>
-          </section>
-
-          <section class="tema_indhold" id="tema_2" hidden>
-            <h2 class="tema_titel">Tema 2</h2>
-          </section>
-
-          <section class="tema_indhold" id="tema_3" hidden>
-            <h2 class="tema_titel">Tema 3</h2>
-          </section>
-
-          <section class="tema_indhold" id="tema_4" hidden>
-            <h2 class="tema_titel">Tema 4</h2>
-          </section>
-
-          <section class="tema_indhold" id="tema_5" hidden>
-            <h2 class="tema_titel">Tema 5</h2>
-          </section>
+      <section id="tema5" class="sektion tema_sektion">
+        <div class="indhold">
+          <h2>Tema 5 – Eksamen</h2>
+          <p>Indhold kommer her.</p>
         </div>
       </section>
     </main>
@@ -142,7 +81,5 @@
         <p>© Noah – 1. semester portfolio</p>
       </div>
     </footer>
-
-    <script src="js/script.js"></script>
   </body>
 </html>
