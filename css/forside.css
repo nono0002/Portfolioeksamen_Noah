@@ -1,0 +1,56 @@
+.sektion {
+  padding: 70px 0;
+}
+
+.intro_indhold {
+  display: grid;
+  gap: 24px;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  justify-items: center;
+}
+
+.intro_tekst {
+  font-size: var(--fs-stor);
+}
+
+.om_mig_grid {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  .om_mig_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.om_mig_billede img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.om_mig_tekst {
+  display: grid;
+  gap: 20px;
+}
+
+.om_mig_tekst .knap {
+  width: fit-content;
+}
+
+.tema_liste {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.tema_preview .overskrift {
+  text-align: center;
+  margin-bottom: 18px;
+}
