@@ -42,3 +42,19 @@
 .nav_links a:hover {
   color: orange;
 }
+
+/* footer css for neden */
+.footer {
+  padding: 40px 0;
+}
+
+.footer_indhold {
+  display: grid;
+  gap: 16px;
+  text-align: center;
+}
+
+.footer_kontakt p {
+  margin: 0;
+  font-size: var(--fs-lille);
+}
