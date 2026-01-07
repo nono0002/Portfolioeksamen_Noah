@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Forside – Noah</title>
+    <title>Om mig – Noah</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,11 +31,154 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <section class="sektion om_intro">
+        <div class="indhold om_grid">
+          <div>
+            <h1>Om mig</h1>
+            <p>
+              Jeg studerer multimediedesign og bygger løbende erfaring med UX/UI
+              og frontend. Jeg kan godt lide, når det ser godt ud – men også når
+              det faktisk spiller i kode.
+            </p>
+            <a class="knap" href="portfolio.html">Se min portfolio</a>
+          </div>
+
+          <div class="om_portraet">
+            <img src="img/forside_portræt.jpeg" alt="Portræt" />
+          </div>
+        </div>
+      </section>
+
+      <section class="sektion om_indhold">
+        <div class="indhold">
+          <details class="om_box" open>
+            <summary>Erhvervserfaring</summary>
+
+            <div class="om_liste">
+              <div class="om_item">
+                <p class="om_periode">
+                  Maj 2025 – Nu , Socialpædagogisk Center Næstved
+                </p>
+                <p class="om_titel">Bostøtte, vagtordning/tilkaldevagt</p>
+                <p>
+                  Yde tilkaldevagtsstøtte på et bosted for personer med særlige
+                  behov og psykosociale udfordringer. Støtte daglige rutiner,
+                  fremme trivsel og hjælpe med at opretholde et trygt og stabilt
+                  miljø. Træde til med kort varsel, samarbejde med personalet og
+                  assistere i både daglige og til tider udfordrende situationer.
+                </p>
+              </div>
+
+              <div class="om_item">
+                <p class="om_periode">Feb. 2024 – Feb. 2025 , qUINT Næstved</p>
+                <p class="om_titel">Salgsassistent / Butiksassistent</p>
+                <p>
+                  Arbejdede med salg og kundeservice hos qUINT
+                  (streetwear/sneakers). Opgaver: assistére kunder,
+                  modtage/udpakke varer, holde butikken præsentabel, klargøring
+                  til åbning og kasse. Fokus på en god kundeoplevelse – også når
+                  der var travlt.
+                </p>
+              </div>
+
+              <div class="om_item">
+                <p class="om_periode">
+                  Aug. 2023 – Feb. 2024 , Kildemark- &amp; Fensmark skole
+                </p>
+                <p class="om_titel">Vikar / tilkaldevikar</p>
+                <p>
+                  Vikar på tværs af indskoling, mellemtrin, udskoling og
+                  specialklasser. Erfaring med ansvar, struktur og støtte til
+                  elever med forskellige behov.
+                </p>
+              </div>
+
+              <div class="om_item">
+                <p class="om_periode">
+                  Apr. 2022 – Mar. 2024 , Martens Frokostrestaurant
+                </p>
+                <p class="om_titel">Restaurantmedarbejder</p>
+                <p>
+                  Kundeservice, servering og opvask i en travl
+                  frokostrestaurant. Lært at arbejde hurtigt, holde overblik,
+                  samarbejde tæt – og tage lukkevagter.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details class="om_box">
+            <summary>Uddannelse</summary>
+
+            <div class="om_liste">
+              <div class="om_item">
+                <p class="om_periode">
+                  2025 – Nu (2027) , Erhvervsakademi København
+                </p>
+                <p class="om_titel">
+                  Multimediedesigner, Professionsbachelor (2 år / 120 ECTS)
+                </p>
+                <p>
+                  Fokus på digitale løsninger: frontend, UX og indhold. Lærer
+                  gennem projekter og praksis.
+                </p>
+              </div>
+
+              <div class="om_item">
+                <p class="om_periode">2020 – 2023 , ZBC Business College</p>
+                <p class="om_titel">
+                  Handelsgymnasiet (HHX), International Marketing
+                </p>
+                <p>
+                  International økonomi, marketing og virksomhedsøkonomi.
+                  Erfaring med strategi, kommunikation og analyse.
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details class="om_box">
+            <summary>Refleksion (1. semester)</summary>
+            <div class="om_liste">
+              <p>
+                Efter 1. semester føler jeg, at jeg har fået et solidt fundament
+                i både design og udvikling. Jeg er blevet meget mere sikker i at
+                arbejde med processer (research, ide, test), men også i at få
+                ting bygget færdigt i HTML/CSS – og lidt JavaScript.
+              </p>
+              <p>
+                Jeg har især taget værktøjerne med mig og det mindset, at man
+                kommer længst ved at teste tidligt og justere undervejs. Jeg kan
+                i så fald medgive, at ens tankeproces ændrer sig drastisk, efter
+                man starter på multimediedesigneruddannelsen. Meget handler om
+                logik.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
       <div class="indhold footer_indhold">
         <p>© Noah – 1. semester portfolio</p>
       </div>
     </footer>
+    <script>
+      const accordionBoxes = document.querySelectorAll(".om_box");
+
+      accordionBoxes.forEach((box) => {
+        box.addEventListener("toggle", () => {
+          if (box.open) {
+            accordionBoxes.forEach((otherBox) => {
+              if (otherBox !== box) {
+                otherBox.open = false;
+              }
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

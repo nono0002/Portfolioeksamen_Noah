@@ -42,15 +42,3 @@
 .om_mig_tekst .knap {
   width: fit-content;
 }
-
-.tema_liste {
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-  flex-wrap: wrap;
-}
-
-.tema_preview .overskrift {
-  text-align: center;
-  margin-bottom: 18px;
-}
